@@ -4,6 +4,7 @@ const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 const db = require('./db');
 const cors = require('cors');
+require('dotenv').config();
 
 
 
@@ -25,7 +26,8 @@ app.listen(port, () => {
 
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://eren820:eren820@atlascluster.b11ukxt.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster";
+const uri = `mongodb+srv://${process.env.MONGODB_NAME}:${process.env.MONGODB_NAME}@atlascluster.b11ukxt.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster`;
+
 let MongoClients = require('mongodb').MongoClient;
 
 const client = new MongoClient(uri);
