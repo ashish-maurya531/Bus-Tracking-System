@@ -22,6 +22,7 @@
     "express": "^4.19.2",
     "mdb-react-ui-kit": "^8.0.0",
     "mongodb": "^6.5.0",
+    "open": "^10.1.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
